@@ -1,0 +1,117 @@
+/* Some variables, for uniformity */
+:root {
+  --defaultFontColor: #ddd;
+  --themeColor: #6495ed;
+  --themeColorLighter: #a5c1f4;
+  
+  --dark0:#000;
+  --dark1:#111;
+  --dark2:#222;
+  --dark2-5:#282828;
+  --dark3:#333;
+}
+
+/*  ------------------------- Overall ------------------------- */
+html {
+  background-color: var(--dark0);
+  color: var(--defaultFontColor);
+  font: 1em sans-serif;
+  line-height: 1.5;
+}
+
+/*  ------------------- Margins and Padding ------------------- */
+#body {
+  margin: 3.6% 4.8% 0;
+  padding: 2.5%;
+}
+
+h1, h2, h3, p, ul, .collapsible{
+  margin: .8rem 0 0;
+  padding: .8rem 1rem;
+}
+p, ul {
+  padding: 0 1rem;
+}
+ul {
+  padding-left: 2rem;
+}
+
+#first {
+  margin-top: 0;
+}
+
+.content {
+  padding: 0px 12px 12px;
+}
+
+/* ------------------------ Font Sizes ------------------------ */
+h3, .collapsible {
+  font-size: 1.125rem;
+}
+
+/* -------------------------- Colors -------------------------- */
+#body {
+  background-color: var(--dark1);
+}
+
+h1, h2, h3 {
+  background-color: var(--dark2);
+  color: var(--themeColor);
+}
+
+.collapsible {
+  background-color: var(--dark2);
+  color: var(--defaultFontColor);
+}
+.collapsible:hover {
+  background-color: var(--dark3);
+}
+.active {
+  background-color: var(--dark2-5);
+}
+
+.content {
+  background-color: var(--dark1);
+}
+
+a:visited {
+  color: pink;
+}
+
+/*  ------------------------- Borders ------------------------- */
+h1, h2 {
+  border: .125rem ridge var(--themeColor);
+}
+
+.active {
+  border: .125rem ridge var(--themeColorLighter);
+  border-bottom: none;
+}
+.content {
+  border: .125rem ridge var(--themeColor);
+  border-top: none;
+}
+
+/* ----------------------- Collapsibles ----------------------- */
+.collapsible {
+  /* Fixing the Defaults */
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.content {
+  display: none; 
+  overflow: hidden;
+}
+
+
+
+/* Trash that I still have to include */
+footer {
+  font-size: .8rem;
+  color: #bbb;
+  padding: .8rem 2.5%;
+  margin: 0 4.8%;
+}
